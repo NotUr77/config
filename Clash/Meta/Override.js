@@ -157,22 +157,6 @@ function main(config) {
     },
     {
       ...groupBaseOption,
-      "name": "Emby",
-      "type": "select",
-      "include-all": true,
-      "proxies": ["手动切换", "香港节点", "美国节点", "狮城节点", "日本节点", "台湾节点", "DIRECT"],
-      "icon": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Emby.png"
-    },
-    {
-      ...groupBaseOption,
-      "name": "Spotify",
-      "type": "select",
-      "include-all": true,
-      "proxies": ["手动切换", "香港节点", "美国节点", "狮城节点", "日本节点", "台湾节点", "DIRECT"],
-      "icon": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Spotify.png"
-    },
-    {
-      ...groupBaseOption,
       "name": "兜底分流",
       "type": "select",
       "proxies": ["手动切换", "香港节点", "美国节点", "狮城节点", "日本节点", "台湾节点", "DIRECT"],
@@ -223,7 +207,14 @@ function main(config) {
       "include-all": true,
       "filter": "(?i)🇨🇳|🇹🇼|台湾|(\b(TW|Tai|Taiwan)\b)",
       "icon": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/China.png"
-    }
+    },
+    {
+      ...groupBaseOption,
+      "name": "个人服务",
+      "type": "select",
+      "proxies": ["手动切换", "香港节点", "美国节点", "狮城节点", "日本节点", "台湾节点", "DIRECT"],
+      "icon": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Daily.png"
+    },
   ];
 
   // 覆盖规则集
@@ -231,151 +222,158 @@ function main(config) {
     "AD": {
       ...ruleProviderCommon,
       "behavior": "classical",
-      "url": "https://github.com/Repcz/Tool/raw/X/Clash/Rules/Reject.list",
+      "url": "https://github.com/NotUr77/Config/raw/main/Clash/Rules/Reject.list",
       "path": "./rules/AD.list"
     },
     "Apple": {
       ...ruleProviderCommon,
       "behavior": "classical",
-      "url": "https://github.com/Repcz/Tool/raw/X/Clash/Rules/Apple.list",
+      "url": "https://github.com/NotUr77/Config/raw/main/Clash/Rules/Apple.list",
       "path": "./rules/Apple.list"
     },
     "Google": {
       ...ruleProviderCommon,
       "behavior": "classical",
-      "url": "https://github.com/Repcz/Tool/raw/X/Clash/Rules/Google.list",
+      "url": "https://github.com/NotUr77/Config/raw/main/Clash/Rules/Google.list",
       "path": "./rules/Google.list"
     },
     "YouTube": {
       ...ruleProviderCommon,
       "behavior": "classical",
-      "url": "https://github.com/Repcz/Tool/raw/X/Clash/Rules/YouTube.list",
+      "url": "https://github.com/NotUr77/Config/raw/main/Clash/Rules/YouTube.list",
       "path": "./rules/YouTube.list"
     },
     "Telegram": {
       ...ruleProviderCommon,
       "behavior": "classical",
-      "url": "https://github.com/Repcz/Tool/raw/X/Clash/Rules/Telegram.list",
+      "url": "https://github.com/NotUr77/Config/raw/main/Clash/Rules/Telegram.list",
       "path": "./rules/Telegram.list"
     },
     "Twitter": {
       ...ruleProviderCommon,
       "behavior": "classical",
-      "url": "https://github.com/Repcz/Tool/raw/X/Clash/Rules/Twitter.list",
+      "url": "https://github.com/NotUr77/Config/raw/main/Clash/Rules/Twitter.list",
       "path": "./rules/Twitter.list"
     },
     "Steam": {
       ...ruleProviderCommon,
       "behavior": "classical",
-      "url": "https://github.com/Repcz/Tool/raw/X/Clash/Rules/Steam.list",
+      "url": "https://github.com/NotUr77/Config/raw/main/Clash/Rules/Steam.list",
       "path": "./rules/Steam.list"
     },
     "Epic": {
       ...ruleProviderCommon,
       "behavior": "classical",
-      "url": "https://github.com/Repcz/Tool/raw/X/Clash/Rules/Epic.list",
+      "url": "https://github.com/NotUr77/Config/raw/main/Clash/Rules/Epic.list",
       "path": "./rules/Epic.list"
     },
     "AI": {
       ...ruleProviderCommon,
       "behavior": "classical",
-      "url": "https://github.com/Repcz/Tool/raw/X/Clash/Rules/AI.list",
+      "url": "https://github.com/NotUr77/Config/raw/main/Clash/Rules/AI.list",
       "path": "./rules/AI.list"
     },
     "Emby": {
       ...ruleProviderCommon,
       "behavior": "classical",
-      "url": "https://github.com/Repcz/Tool/raw/X/Clash/Rules/Emby.list",
+      "url": "https://github.com/NotUr77/Config/raw/main/Clash/Rules/Emby.list",
       "path": "./rules/Emby.list"
     },
     "Spotify": {
       ...ruleProviderCommon,
       "behavior": "classical",
-      "url": "https://github.com/Repcz/Tool/raw/X/Clash/Rules/Spotify.list",
+      "url": "https://github.com/NotUr77/Config/raw/main/Clash/Rules/Spotify.list",
       "path": "./rules/Spotify.list"
     },
     "Bahamut": {
       ...ruleProviderCommon,
       "behavior": "classical",
-      "url": "https://github.com/Repcz/Tool/raw/X/Clash/Rules/Bahamut.list",
+      "url": "https://github.com/NotUr77/Config/raw/main/Clash/Rules/Bahamut.list",
       "path": "./rules/Bahamut.list"
     },
     "Netflix": {
       ...ruleProviderCommon,
       "behavior": "classical",
-      "url": "https://github.com/Repcz/Tool/raw/X/Clash/Rules/Netflix.list",
+      "url": "https://github.com/NotUr77/Config/raw/main/Clash/Rules/Netflix.list",
       "path": "./rules/Netflix.list"
     },
     "Disney": {
       ...ruleProviderCommon,
       "behavior": "classical",
-      "url": "https://github.com/Repcz/Tool/raw/X/Clash/Rules/Disney.list",
+      "url": "https://github.com/NotUr77/Config/raw/main/Clash/Rules/Disney.list",
       "path": "./rules/Disney.list"
     },
     "PrimeVideo": {
       ...ruleProviderCommon,
       "behavior": "classical",
-      "url": "https://github.com/Repcz/Tool/raw/X/Clash/Rules/PrimeVideo.list",
+      "url": "https://github.com/NotUr77/Config/raw/main/Clash/Rules/PrimeVideo.list",
       "path": "./rules/PrimeVideo.list"
     },
     "HBO": {
       ...ruleProviderCommon,
       "behavior": "classical",
-      "url": "https://github.com/Repcz/Tool/raw/X/Clash/Rules/HBO.list",
+      "url": "https://github.com/NotUr77/Config/raw/main/Clash/Rules/HBO.list",
       "path": "./rules/HBO.list"
     },
     "OneDrive": {
       ...ruleProviderCommon,
       "behavior": "classical",
-      "url": "https://github.com/Repcz/Tool/raw/X/Clash/Rules/OneDrive.list",
+      "url": "https://github.com/NotUr77/Config/raw/main/Clash/Rules/OneDrive.list",
       "path": "./rules/OneDrive.list"
     },
     "Github": {
       ...ruleProviderCommon,
       "behavior": "classical",
-      "url": "https://github.com/Repcz/Tool/raw/X/Clash/Rules/Github.list",
+      "url": "https://github.com/NotUr77/Config/raw/main/Clash/Rules/Github.list",
       "path": "./rules/Github.list"
     },
     "Microsoft": {
       ...ruleProviderCommon,
       "behavior": "classical",
-      "url": "https://github.com/Repcz/Tool/raw/X/Clash/Rules/Microsoft.list",
+      "url": "https://github.com/NotUr77/Config/raw/main/Clash/Rules/Microsoft.list",
       "path": "./rules/Microsoft.list"
     },
     "Lan": {
       ...ruleProviderCommon,
       "behavior": "classical",
-      "url": "https://github.com/Repcz/Tool/raw/X/Clash/Rules/Lan.list",
+      "url": "https://github.com/NotUr77/Config/raw/main/Clash/Rules/Lan.list",
       "path": "./rules/Lan.list"
     },
     "ProxyGFW": {
       ...ruleProviderCommon,
       "behavior": "classical",
-      "url": "https://github.com/Repcz/Tool/raw/X/Clash/Rules/ProxyGFW.list",
+      "url": "https://github.com/NotUr77/Config/raw/main/Clash/Rules/ProxyGFW.list",
       "path": "./rules/ProxyGFW.list"
-    }
+    },
+    "PersonalService": {
+      ...ruleProviderCommon,
+      "behavior": "classical",
+      "url": "https://github.com/NotUr77/Config/raw/main/Clash/Rules/Personal_Service.list",
+      "path": "./rules/Personal_Service.list"
+    },
   };
 
   // 覆盖规则
   config["rules"] = [
     "RULE-SET,AD,REJECT",
+    "RULE-SET,Lan,DIRECT",
+    "RULE-SET,PersonalService,个人服务",
     "RULE-SET,AI,AI",
     "RULE-SET,Apple,苹果服务",
     "RULE-SET,YouTube,谷歌服务",
+    "RULE-SET,Github,谷歌服务",
     "RULE-SET,Google,谷歌服务",
     "RULE-SET,Telegram,电报消息",
     "RULE-SET,Twitter,推特消息",
     "RULE-SET,Steam,游戏平台",
     "RULE-SET,Epic,游戏平台",
-    "RULE-SET,Emby,Emby",
-    "RULE-SET,Spotify,Spotify",
     "RULE-SET,Bahamut,国际媒体",
     "RULE-SET,Netflix,国际媒体",
     "RULE-SET,Disney,国际媒体",
     "RULE-SET,PrimeVideo,国际媒体",
     "RULE-SET,HBO,国际媒体",
     "GEOSITE,onedrive,微软服务",
-    "GEOSITE,github,微软服务",
+    "GEOSITE,bing,微软服务",
     "GEOSITE,microsoft,微软服务",
     "GEOSITE,gfw,国外网站",
     "GEOIP,private,DIRECT",

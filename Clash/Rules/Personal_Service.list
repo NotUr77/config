@@ -1,0 +1,7 @@
+# 规则名称: Personal Service
+# 规则统计: 4
+
+DOMAIN-SUFFIX,ddns.net
+DOMAIN-SUFFIX,2m.ink
+DOMAIN-SUFFIX,tail1b55d5.ts.net
+SRC-IP-CIDR,100.90.217.21
