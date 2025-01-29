@@ -157,6 +157,13 @@ function main(config) {
     },
     {
       ...groupBaseOption,
+      "name": "个人服务",
+      "type": "select",
+      "proxies": ["手动切换", "香港节点", "美国节点", "狮城节点", "日本节点", "台湾节点", "DIRECT"],
+      "icon": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Daily.png"
+    },
+    {
+      ...groupBaseOption,
       "name": "兜底分流",
       "type": "select",
       "proxies": ["手动切换", "香港节点", "美国节点", "狮城节点", "日本节点", "台湾节点", "DIRECT"],
@@ -207,13 +214,6 @@ function main(config) {
       "include-all": true,
       "filter": "(?i)🇨🇳|🇹🇼|台湾|(\b(TW|Tai|Taiwan)\b)",
       "icon": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/China.png"
-    },
-    {
-      ...groupBaseOption,
-      "name": "个人服务",
-      "type": "select",
-      "proxies": ["手动切换", "香港节点", "美国节点", "狮城节点", "日本节点", "台湾节点", "DIRECT"],
-      "icon": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Daily.png"
     },
   ];
 
