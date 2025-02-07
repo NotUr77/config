@@ -39,12 +39,12 @@ function main(config) {
 
   // 覆盖 dns 配置
   config["dns"] = {
-    "enable": true,
+    "enable": false,
     "listen": "0.0.0.0:1053",
     "ipv6": false,
     "enhanced-mode": "fake-ip",
     "fake-ip-range": "198.18.0.1/16",
-    "fake-ip-filter": ["*", "+.lan", "+.local", "+.direct", "+.msftconnecttest.com", "+.msftncsi.com", "+.tail1b55d5.ts.net"],
+    "fake-ip-filter": ["*", "+.lan", "+.local", "+.direct", "+.msftconnecttest.com", "+.msftncsi.com", "+.ts.net"],
     "nameserver": ["8.8.8.8", "1.1.1.1"]
   };
 
